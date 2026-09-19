@@ -138,6 +138,16 @@ const play_store_testing = 'https://play.google.com/apps/testing/ca.enoki.hkmj';
 				</div>
 			</section>
 
+			<section class="upcoming">
+				<p class="kicker">Coming soon</p>
+				<h2>Isaludo</h2>
+				<p class="upcoming-lede">
+					A collection of ten solo card games, each playable with nothing
+					more than a standard deck. The app is designed and in
+					development for Android — no beta yet, but watch this space.
+				</p>
+			</section>
+
 			<footer class="footer">
 				<span>&copy; {new Date().getFullYear()} Enoki Solutions Inc.</span>
 			</footer>
@@ -430,6 +440,24 @@ const play_store_testing = 'https://play.google.com/apps/testing/ca.enoki.hkmj';
 
 			.button-secondary:hover {
 				border-color: var(--ink);
+			}
+
+			.upcoming {
+				border-top: 1px solid var(--line);
+				padding: 56px 0;
+			}
+
+			.upcoming h2 {
+				margin-top: 10px;
+				font-size: clamp(1.6rem, 3.5vw, 2rem);
+			}
+
+			.upcoming-lede {
+				margin: 16px 0 0;
+				max-width: 54ch;
+				font-size: 1.02rem;
+				line-height: 1.6;
+				color: var(--gray);
 			}
 
 			.footer {
