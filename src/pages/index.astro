@@ -1,0 +1,407 @@
+---
+const tester_group = 'https://groups.google.com/g/chkmj-app-testers';
+const play_store_testing = 'https://play.google.com/apps/testing/ca.enoki.hkmj';
+---
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/png" href="/brand/favicon-32.png" />
+		<link rel="apple-touch-icon" href="/brand/apple-touch-icon.png" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="generator" content={Astro.generator} />
+		<meta
+			name="description"
+			content="Enoki Solutions Inc. builds small, sharp software. First up: Cliff's HK Mahjong, a Hong Kong mahjong app for Android."
+		/>
+		<title>Enoki Solutions</title>
+	</head>
+	<body>
+		<div class="page">
+			<header class="topbar">
+				<a class="lockup" href="/">
+					<img
+						src="/brand/mark-64.png"
+						alt=""
+						width="28"
+						height="28"
+						class="mark"
+					/>
+					<span class="wordmark"
+						><strong>Enoki</strong> Solutions Inc.</span
+					>
+				</a>
+				<a class="nav-link" href={tester_group}>Join the beta</a>
+			</header>
+
+			<section class="hero">
+				<h1>We build small,<br />sharp software.</h1>
+				<p class="hero-lede">
+					Enoki Solutions is a tiny studio out of Cliff Hammerschmidt's
+					back pocket. Right now we're all in on one thing: a mahjong app
+					worth opening every night.
+				</p>
+			</section>
+
+			<section class="product">
+				<div class="product-intro">
+					<p class="kicker">The app</p>
+					<h2>Cliff's HK Mahjong</h2>
+					<p class="product-lede">
+						Hong Kong scoring, played the way your table actually plays it —
+						not a generic ruleset that argues with your uncle.
+					</p>
+				</div>
+
+				<ul class="features">
+					<li>
+						<h3>Your table's rules, remembered</h3>
+						<p>
+							Set the minimum faan once and it sticks — no re-explaining "no,
+							THIS group plays 3 faan minimum" at the start of every game.
+						</p>
+					</li>
+					<li>
+						<h3>Play solo or pull up a table</h3>
+						<p>
+							Face a genuinely difficult AI on your own, or sit three friends
+							down together over nearby multiplayer — no server, no account.
+						</p>
+					</li>
+					<li>
+						<h3>Built to end arguments, not start them</h3>
+						<p>
+							Made by someone who plays this game with actual family and got
+							tired of relitigating scoring after every hand.
+						</p>
+					</li>
+				</ul>
+
+				<div class="screens">
+					<img
+						src="/images/hkmj/screenshot-start.png"
+						alt="Cliff's HK Mahjong start screen"
+						class="screen"
+						width="900"
+						height="506"
+						loading="lazy"
+					/>
+					<img
+						src="/images/hkmj/screenshot-game.png"
+						alt="A game of Cliff's HK Mahjong in progress"
+						class="screen"
+						width="900"
+						height="506"
+						loading="lazy"
+					/>
+					<img
+						src="/images/hkmj/screenshot-nearby.png"
+						alt="Setting up a nearby multiplayer game in Cliff's HK Mahjong"
+						class="screen"
+						width="900"
+						height="506"
+						loading="lazy"
+					/>
+				</div>
+
+				<div class="cta">
+					<p class="cta-status">Closed beta, open door.</p>
+					<div class="cta-buttons">
+						<a class="button button-primary" href={tester_group}
+							>Join the tester group</a
+						>
+						<a class="button button-secondary" href={play_store_testing}
+							>Already in the group? Opt in on Play Store</a
+						>
+					</div>
+				</div>
+			</section>
+
+			<footer class="footer">
+				<span>&copy; {new Date().getFullYear()} Enoki Solutions Inc.</span>
+			</footer>
+		</div>
+
+		<style is:global>
+			@font-face {
+				font-family: 'Karla';
+				src: url('/fonts/karla/Karla-Regular.ttf') format('truetype');
+				font-weight: 400;
+				font-style: normal;
+				font-display: swap;
+			}
+			@font-face {
+				font-family: 'Karla';
+				src: url('/fonts/karla/Karla-Bold.ttf') format('truetype');
+				font-weight: 700;
+				font-style: normal;
+				font-display: swap;
+			}
+			@font-face {
+				font-family: 'Karla';
+				src: url('/fonts/karla/Karla-Italic.ttf') format('truetype');
+				font-weight: 400;
+				font-style: italic;
+				font-display: swap;
+			}
+			@font-face {
+				font-family: 'Karla';
+				src: url('/fonts/karla/Karla-BoldItalic.ttf') format('truetype');
+				font-weight: 700;
+				font-style: italic;
+				font-display: swap;
+			}
+		</style>
+
+		<style>
+			:root {
+				--ink: #1a1a1a;
+				--paper: #ffffff;
+				--paper-dim: #f6f5f2;
+				--line: #e4e1da;
+				--accent: #fe5000;
+				--gray: #6d6a63;
+			}
+
+			* {
+				box-sizing: border-box;
+			}
+
+			html,
+			body {
+				margin: 0;
+				padding: 0;
+			}
+
+			body {
+				background: var(--paper);
+				color: var(--ink);
+				font-family: 'Karla', sans-serif;
+				-webkit-font-smoothing: antialiased;
+			}
+
+			h1,
+			h2,
+			h3 {
+				font-family: 'Karla', sans-serif;
+				font-weight: 700;
+				line-height: 1.1;
+				margin: 0;
+			}
+
+			a {
+				color: inherit;
+			}
+
+			a:focus-visible,
+			button:focus-visible {
+				outline: 2px solid var(--accent);
+				outline-offset: 3px;
+			}
+
+			.page {
+				max-width: 980px;
+				margin: 0 auto;
+				padding: 0 28px;
+			}
+
+			.topbar {
+				display: flex;
+				align-items: center;
+				justify-content: space-between;
+				padding: 32px 0 0;
+			}
+
+			.lockup {
+				display: flex;
+				align-items: center;
+				gap: 10px;
+				text-decoration: none;
+			}
+
+			.mark {
+				display: block;
+			}
+
+			.wordmark {
+				font-size: 0.92rem;
+				letter-spacing: 0.02em;
+			}
+
+			.wordmark strong {
+				font-weight: 700;
+			}
+
+			.nav-link {
+				text-decoration: none;
+				font-size: 0.92rem;
+				color: var(--gray);
+				border-bottom: 1px solid transparent;
+				transition: border-color 0.15s ease, color 0.15s ease;
+			}
+
+			.nav-link:hover {
+				color: var(--ink);
+				border-color: var(--accent);
+			}
+
+			.hero {
+				text-align: center;
+				padding: 104px 0 96px;
+				max-width: 640px;
+				margin: 0 auto;
+			}
+
+			.hero h1 {
+				font-size: clamp(2.4rem, 5.5vw, 3.4rem);
+			}
+
+			.hero-lede {
+				margin: 28px auto 0;
+				max-width: 46ch;
+				font-size: 1.08rem;
+				line-height: 1.65;
+				color: var(--gray);
+			}
+
+			.product {
+				border-top: 1px solid var(--line);
+				padding: 80px 0 64px;
+			}
+
+			.kicker {
+				margin: 0;
+				color: var(--gray);
+				font-size: 0.92rem;
+			}
+
+			.product h2 {
+				margin-top: 10px;
+				font-size: clamp(1.9rem, 4vw, 2.4rem);
+			}
+
+			.product-lede {
+				margin: 18px 0 0;
+				max-width: 54ch;
+				font-size: 1.05rem;
+				line-height: 1.6;
+				color: var(--gray);
+			}
+
+			.features {
+				list-style: none;
+				margin: 52px 0 0;
+				padding: 0;
+				max-width: 620px;
+				display: grid;
+				gap: 30px;
+			}
+
+			.features li {
+				padding-left: 20px;
+				border-left: 2px solid var(--accent);
+			}
+
+			.features h3 {
+				font-size: 1.1rem;
+				font-weight: 700;
+			}
+
+			.features p {
+				margin: 8px 0 0;
+				color: var(--gray);
+				line-height: 1.55;
+				max-width: 48ch;
+			}
+
+			.screens {
+				margin: 72px 0 0;
+				display: flex;
+				gap: 24px;
+				flex-wrap: wrap;
+				justify-content: center;
+			}
+
+			.screen {
+				width: 260px;
+				height: auto;
+				border-radius: 10px;
+				border: 1px solid var(--line);
+				box-shadow: 0 20px 40px -24px rgba(26, 26, 26, 0.25);
+			}
+
+			.cta {
+				margin-top: 88px;
+				padding: 36px;
+				background: var(--paper-dim);
+				border-radius: 12px;
+				display: flex;
+				align-items: center;
+				justify-content: space-between;
+				gap: 24px;
+				flex-wrap: wrap;
+			}
+
+			.cta-status {
+				margin: 0;
+				font-size: 1.2rem;
+				font-weight: 700;
+			}
+
+			.cta-buttons {
+				display: flex;
+				gap: 14px;
+				flex-wrap: wrap;
+			}
+
+			.button {
+				display: inline-flex;
+				align-items: center;
+				padding: 12px 20px;
+				border-radius: 999px;
+				text-decoration: none;
+				font-size: 0.95rem;
+				font-weight: 700;
+				transition: transform 0.15s ease, background 0.15s ease,
+					border-color 0.15s ease;
+			}
+
+			.button-primary {
+				background: var(--accent);
+				color: #fff;
+			}
+
+			.button-primary:hover {
+				transform: translateY(-1px);
+			}
+
+			.button-secondary {
+				background: transparent;
+				border: 1px solid #cfcac0;
+				color: var(--ink);
+			}
+
+			.button-secondary:hover {
+				border-color: var(--ink);
+			}
+
+			.footer {
+				border-top: 1px solid var(--line);
+				padding: 32px 0 56px;
+				color: var(--gray);
+				font-size: 0.88rem;
+			}
+
+			@media (max-width: 760px) {
+				.hero {
+					padding: 64px 0 56px;
+				}
+
+				.cta {
+					flex-direction: column;
+					align-items: flex-start;
+				}
+			}
+		</style>
+	</body>
+</html>
