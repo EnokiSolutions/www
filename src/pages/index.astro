@@ -12,7 +12,7 @@ const play_store_testing = 'https://play.google.com/apps/testing/ca.enoki.hkmj';
 		<meta name="generator" content={Astro.generator} />
 		<meta
 			name="description"
-			content="Enoki Solutions Inc. builds small, sharp software. First up: Cliff's HK Mahjong, a Hong Kong mahjong app for Android."
+			content="Enoki Solutions Inc. builds software and offers software and data consulting. Our first product is Cliff's HK Mahjong, a free Hong Kong mahjong app for Android."
 		/>
 		<title>Enoki Solutions</title>
 	</head>
@@ -37,42 +37,63 @@ const play_store_testing = 'https://play.google.com/apps/testing/ca.enoki.hkmj';
 			<section class="hero">
 				<h1>We build small,<br />sharp software.</h1>
 				<p class="hero-lede">
-					Enoki Solutions is a tiny studio out of Cliff Hammerschmidt's
-					back pocket. Right now we're all in on one thing: a mahjong app
-					worth opening every night.
+					Enoki Solutions is a small software studio. We offer consulting
+					services in software and data, and we build our own products —
+					starting with a Hong Kong mahjong app worth opening every night.
 				</p>
+			</section>
+
+			<section class="services">
+				<p class="kicker">Consulting</p>
+				<h2>Software and data, done properly</h2>
+				<p class="services-lede">
+					We work with teams on software design, implementation, and data
+					problems — from a focused engagement to an ongoing partnership.
+				</p>
+				<a class="nav-link services-link" href="mailto:enquire@enoki.ca"
+					>Get in touch: enquire@enoki.ca</a
+				>
 			</section>
 
 			<section class="product">
 				<div class="product-intro">
-					<p class="kicker">The app</p>
+					<p class="kicker">Our first product</p>
 					<h2>Cliff's HK Mahjong</h2>
 					<p class="product-lede">
-						Hong Kong scoring, played the way your table actually plays it —
-						not a generic ruleset that argues with your uncle.
+						A fully functional Hong Kong mahjong game, free, with no ads.
+						Play offline, on your own, or with friends in person.
 					</p>
 				</div>
 
 				<ul class="features">
 					<li>
-						<h3>Your table's rules, remembered</h3>
+						<h3>Free, with no ads</h3>
 						<p>
-							Set the minimum faan once and it sticks — no re-explaining "no,
-							THIS group plays 3 faan minimum" at the start of every game.
+							The full game, with no purchases, subscriptions, or ads —
+							nothing to unlock and nothing interrupting play.
 						</p>
 					</li>
 					<li>
-						<h3>Play solo or pull up a table</h3>
+						<h3>Play entirely offline</h3>
 						<p>
-							Face a genuinely difficult AI on your own, or sit three friends
-							down together over nearby multiplayer — no server, no account.
+							No account and no internet connection required. Play a full
+							game against the AI anywhere, anytime.
 						</p>
 					</li>
 					<li>
-						<h3>Built to end arguments, not start them</h3>
+						<h3>Local multiplayer with friends</h3>
 						<p>
-							Made by someone who plays this game with actual family and got
-							tired of relitigating scoring after every hand.
+							Sit up to four players down at the same table using Google's
+							Nearby Connections API — no server, no Wi-Fi network, no
+							account, just devices in the same room.
+						</p>
+					</li>
+					<li>
+						<h3>Hong Kong scoring rules</h3>
+						<p>
+							Faan values and chip conversion follow Hong Kong mahjong
+							scoring, with table-specific rules like the minimum faan set
+							once and remembered for future games.
 						</p>
 					</li>
 				</ul>
@@ -262,6 +283,32 @@ const play_store_testing = 'https://play.google.com/apps/testing/ca.enoki.hkmj';
 				font-size: 1.08rem;
 				line-height: 1.65;
 				color: var(--gray);
+			}
+
+			.services {
+				border-top: 1px solid var(--line);
+				padding: 56px 0;
+				text-align: center;
+				max-width: 640px;
+				margin: 0 auto;
+			}
+
+			.services h2 {
+				margin-top: 10px;
+				font-size: clamp(1.6rem, 3.5vw, 2rem);
+			}
+
+			.services-lede {
+				margin: 16px auto 0;
+				max-width: 50ch;
+				font-size: 1.02rem;
+				line-height: 1.6;
+				color: var(--gray);
+			}
+
+			.services-link {
+				display: inline-block;
+				margin-top: 20px;
 			}
 
 			.product {
