@@ -367,6 +367,16 @@ const { title, description } = Astro.props;
 				}
 			}
 		
+			.title-link {
+				text-decoration: none;
+				border-bottom: 2px solid transparent;
+				transition: border-color 0.15s ease;
+			}
+
+			.title-link:hover {
+				border-color: var(--accent);
+			}
+
 			.product-link {
 				display: inline-block;
 				margin-top: 20px;
@@ -388,7 +398,7 @@ const { title, description } = Astro.props;
 				font-size: 1.2rem;
 			}
 
-			.legal p {
+			.legal p:not(.kicker) {
 				margin: 12px 0 0;
 				line-height: 1.65;
 				color: var(--gray);

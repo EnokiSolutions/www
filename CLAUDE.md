@@ -8,6 +8,14 @@ Marketing/company site for Enoki Solutions Inc., built with [Astro](https://astr
 - `public/` — static assets copied as-is into the build output (includes `CNAME` for the custom domain `www.enoki.ca`).
 - `docs/` — **build output only**. GitHub Pages is configured to serve from `main` / `/docs`. Never hand-edit files in `docs/` — they are overwritten by `npm run build`. It is committed to git (not gitignored) so Pages can serve it directly with no CI/build step on GitHub's side.
 
+## Page structure and style
+
+- `src/layouts/Base.astro` — shared layout (head, topbar, footer, fonts, all CSS). Every page uses it.
+- `src/pages/index.astro` — home page. Follow `style/home.md`.
+- `src/pages/<app>/index.astro` and `src/pages/<app>/privacy.astro` — per-app pages (`hkmj`, `isaludo`). Follow `style/app-pages.md`.
+
+Read the relevant style guide before changing or adding a page, and update it when a style decision changes.
+
 ## Commands
 
 - `npm run dev` — local dev server with hot reload
