@@ -18,4 +18,4 @@ The home page is a short, centred overview of the company. It links out to app p
 - **Kicker** (`.kicker`) above every section `h2`: bold, uppercase, `0.85rem`, `letter-spacing: 0.12em`, accent orange.
 - **App titles link to their page:** `<h2><a class="title-link" href="/<app>/">…</a></h2>`. No underline at rest; orange underline on hover.
 - **Teasers stay short:** one or two sentences. Features, screenshots, and calls to action belong on the app page.
-- Kicker wording: "Our first product" for a released/beta app, "Coming soon" for an unreleased one.
+- Kicker wording: "Our first product" for a released/beta app, "Coming soon" for an unreleased one, "Free download" for a free downloadable tool. Downloadable files go in `public/downloads/` with a version in the filename (e.g. `… v1.amxd`).

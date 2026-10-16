@@ -1,0 +1,74 @@
+---
+import Base from '../../layouts/Base.astro';
+
+const download = '/downloads/MIDI%20Pass%20Lowest%20Note%20Only%20v1.amxd';
+---
+
+<Base
+	title="MIDI Pass Lowest Note Only — Enoki Solutions"
+	description="MIDI Pass Lowest Note Only is a free Max for Live MIDI effect for Ableton Live that passes only the lowest held note and can strip keyswitches."
+>
+	<section class="product">
+		<div class="product-intro">
+			<p class="kicker">Max for Live device</p>
+			<h2>MIDI Pass Lowest Note Only</h2>
+			<p class="product-lede">
+				A small MIDI effect for Ableton Live that turns any polyphonic
+				MIDI — wherever notes overlap — into a single line by passing
+				only the lowest held note — with optional
+				keyswitch stripping.
+			</p>
+		</div>
+
+		<ul class="features">
+			<li>
+				<h3>Built for pitch-following plugins</h3>
+				<p>
+					Made to feed MIDI into <a
+						href="https://www.aeonslight.com/plugins/eq">Aeons Light EQ</a>, which can follow MIDI notes. Put the device on the
+					track playing the part, followed by Ableton's External
+					Instrument device with its MIDI output routed to the EQ — no
+					separate MIDI track to keep in sync when the part changes.
+				</p>
+				<p>
+					Add Ableton's Pitch device set to −12 st before the External
+					Instrument. There's no agreed standard for whether MIDI note
+					60 is C3, C4, or C5, and Live and the EQ number octaves one
+					apart, so without the offset the EQ tracks an octave high.
+				</p>
+			</li>
+			<li>
+				<h3>Lowest note only</h3>
+				<p>
+					When on, only the lowest held note is output, making any
+					part monophonic. Handy for driving a bass line or mono synth
+					from any polyphonic part.
+				</p>
+			</li>
+			<li>
+				<h3>Strip keyswitches</h3>
+				<p>
+					Notes below Keyswitch Low (default C1) or above Keyswitch
+					High (default F6) are treated as keyswitches and removed,
+					so articulation changes don't reach the instrument.
+				</p>
+			</li>
+			<li>
+				<h3>Pass-through when off</h3>
+				<p>
+					With both buttons off, the device passes all MIDI through
+					untouched.
+				</p>
+			</li>
+		</ul>
+
+		<div class="cta">
+			<p class="cta-status">Free download, version 1. Requires Ableton Live 12.4.5 or later with Max for Live (Max 9).</p>
+			<div class="cta-buttons">
+				<a class="button button-primary" href={download} download
+					>Download v1 (.amxd)</a
+				>
+			</div>
+		</div>
+	</section>
+</Base>
