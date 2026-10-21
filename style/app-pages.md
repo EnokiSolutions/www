@@ -10,7 +10,8 @@ Left-aligned, full detail, inside one `<section class="product">`:
 2. `.features` — list of `h3` and `p` pairs, each with the orange left border.
 3. `.screens` — screenshots, `width="900" height="506"`, `loading="lazy"`, descriptive `alt` text.
 4. `.cta` — status line and buttons (`.button-primary` for the main action, `.button-secondary` for the alternative). Beta and sign-up links go **here only, never in the topbar**.
-5. Footer links such as "Privacy policy" (`.nav-link .product-link`).
+5. Optional `.howto` block — `h3` plus short `p`/`ol` instructions (e.g. HKMJ's "Updating the app").
+6. Footer links such as "Privacy policy" (`.nav-link .product-link`).
 
 An app with nothing released yet (e.g. Isaludo) uses a single centred `.upcoming` section instead.
 
