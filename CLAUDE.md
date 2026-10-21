@@ -5,7 +5,7 @@ Marketing/company site for Enoki Solutions Inc., built with [Astro](https://astr
 ## Architecture
 
 - `src/` — Astro source (pages, components, layouts). Edit here.
-- `public/` — static assets copied as-is into the build output (includes `CNAME` for the custom domain `www.enoki.ca`).
+- `public/` — static assets copied as-is into the build output (includes `CNAME` for the custom domain `enoki.ca`).
 - `docs/` — **build output only**. GitHub Pages is configured to serve from `main` / `/docs`. Never hand-edit files in `docs/` — they are overwritten by `npm run build`. It is committed to git (not gitignored) so Pages can serve it directly with no CI/build step on GitHub's side.
 
 ## Page structure and style
@@ -36,4 +36,4 @@ The real Enoki Solutions identity (logo mark, wordmark, Karla typeface files, br
 
 ## Deployment
 
-GitHub Pages serves directly from the `docs/` folder on `main` — no GitHub Actions workflow needed. Custom domain is `www.enoki.ca`, configured via `public/CNAME` (copied into `docs/CNAME` on build) and DNS records at the domain registrar.
+GitHub Pages serves directly from the `docs/` folder on `main` — no GitHub Actions workflow needed. Custom domain is `enoki.ca`, configured via `public/CNAME` (copied into `docs/CNAME` on build) and DNS records at the domain registrar.
